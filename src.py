@@ -1,8 +1,13 @@
 import tkinter
+import random
 
 def hangman():
 
-    goodWord = input("Set word:")
+    goodWord = input("Set word, or type ""1player"" to play vs computer")
+    if goodWord == "1player":
+      goodWord = []
+
+    
     print(goodWord)
     score = 0
 
